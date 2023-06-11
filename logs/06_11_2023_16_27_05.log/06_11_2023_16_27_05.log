@@ -1,0 +1,21 @@
+[2023-06-11 16:27:12,766] 38 root - INFO - Entered into the data ingestion method
+[2023-06-11 16:27:13,018] 48 root - INFO - Read the dataset as dataframe
+[2023-06-11 16:27:13,021] 51 root - INFO - Make a directory for training data
+[2023-06-11 16:27:13,501] 54 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-11 16:27:13,501] 56 root - INFO - Train Test Split initiated
+[2023-06-11 16:27:13,903] 60 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-11 16:27:13,978] 63 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-11 16:27:13,978] 65 root - INFO - Ingestion of the data has been completed
+[2023-06-11 16:27:14,127] 147 root - INFO - Read train and test data completed
+[2023-06-11 16:27:14,127] 149 root - INFO - Check if there is any feature which consist 0 standard deviation or not
+[2023-06-11 16:27:14,141] 153 root - INFO - Check if there is any feature  consist duplicate value or not or not
+[2023-06-11 16:27:14,219] 157 root - INFO - Feature Transformation has been strated to transform the important featrue into one feature
+[2023-06-11 16:27:14,240] 123 root - INFO - Categorical columns: ['SEX', 'EDUCATION', 'MARRIAGE']
+[2023-06-11 16:27:14,241] 124 root - INFO - Numerical columns: ['LIMIT_BALAGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'TOTAL_BILL_AMT', 'TOTAL_PAY_AMT']
+[2023-06-11 16:27:14,241] 135 root - INFO - Pipeline for numerical and categorical completed
+[2023-06-11 16:27:14,241] 162 root - INFO - Obtaining preprocessing object
+[2023-06-11 16:27:14,242] 168 root - INFO - Gettting the X train dataframe consist all the features
+[2023-06-11 16:27:14,242] 171 root - INFO - Gettting the y train dataframe consist the label
+[2023-06-11 16:27:14,243] 175 root - INFO - Gettting the X test dataframe consist all the features
+[2023-06-11 16:27:14,243] 178 root - INFO - Gettting the y test dataframe consist the label
+[2023-06-11 16:27:14,243] 180 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.

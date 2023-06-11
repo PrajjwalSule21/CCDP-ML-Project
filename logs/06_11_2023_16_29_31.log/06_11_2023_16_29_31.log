@@ -1,0 +1,21 @@
+[2023-06-11 16:29:33,754] 38 root - INFO - Entered into the data ingestion method
+[2023-06-11 16:29:33,917] 48 root - INFO - Read the dataset as dataframe
+[2023-06-11 16:29:33,919] 51 root - INFO - Make a directory for training data
+[2023-06-11 16:29:34,260] 54 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-11 16:29:34,260] 56 root - INFO - Train Test Split initiated
+[2023-06-11 16:29:34,697] 60 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-11 16:29:34,765] 63 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-11 16:29:34,766] 65 root - INFO - Ingestion of the data has been completed
+[2023-06-11 16:29:34,869] 148 root - INFO - Read train and test data completed
+[2023-06-11 16:29:34,869] 150 root - INFO - Check if there is any feature which consist 0 standard deviation or not
+[2023-06-11 16:29:34,880] 154 root - INFO - Check if there is any feature  consist duplicate value or not or not
+[2023-06-11 16:29:34,911] 158 root - INFO - Feature Transformation has been strated to transform the important featrue into one feature
+[2023-06-11 16:29:34,920] 124 root - INFO - Categorical columns: ['SEX', 'EDUCATION', 'MARRIAGE']
+[2023-06-11 16:29:34,920] 125 root - INFO - Numerical columns: ['LIMIT_BAL', 'AGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'TOTAL_BILL_AMT', 'TOTAL_PAY_AMT']
+[2023-06-11 16:29:34,920] 136 root - INFO - Pipeline for numerical and categorical completed
+[2023-06-11 16:29:34,920] 163 root - INFO - Obtaining preprocessing object
+[2023-06-11 16:29:34,921] 169 root - INFO - Gettting the X train dataframe consist all the features
+[2023-06-11 16:29:34,922] 172 root - INFO - Gettting the y train dataframe consist the label
+[2023-06-11 16:29:34,922] 176 root - INFO - Gettting the X test dataframe consist all the features
+[2023-06-11 16:29:34,922] 179 root - INFO - Gettting the y test dataframe consist the label
+[2023-06-11 16:29:34,922] 181 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.

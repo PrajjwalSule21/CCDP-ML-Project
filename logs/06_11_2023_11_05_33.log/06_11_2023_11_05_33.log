@@ -1,0 +1,10 @@
+[2023-06-11 11:05:40,462] 35 root - INFO - Entered into the data ingestion method
+[2023-06-11 11:05:40,696] 45 root - INFO - Read the dataset as dataframe
+[2023-06-11 11:05:40,697] 48 root - INFO - Make a directory for training data
+[2023-06-11 11:05:41,119] 51 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-11 11:05:41,119] 53 root - INFO - Train Test Split initiated
+[2023-06-11 11:05:41,650] 57 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-11 11:05:41,723] 60 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-11 11:05:41,724] 62 root - INFO - Ingestion of the data has been completed
+[2023-06-11 11:05:41,840] 123 root - INFO - Read train and test data completed
+[2023-06-11 11:05:41,840] 125 root - INFO - Check if there is any feature which consist 0 standard deviation or not

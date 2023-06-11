@@ -1,0 +1,21 @@
+[2023-06-11 16:13:53,340] 38 root - INFO - Entered into the data ingestion method
+[2023-06-11 16:13:53,427] 48 root - INFO - Read the dataset as dataframe
+[2023-06-11 16:13:53,428] 51 root - INFO - Make a directory for training data
+[2023-06-11 16:13:53,791] 54 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-11 16:13:53,791] 56 root - INFO - Train Test Split initiated
+[2023-06-11 16:13:54,090] 60 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-11 16:13:54,222] 63 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-11 16:13:54,222] 65 root - INFO - Ingestion of the data has been completed
+[2023-06-11 16:13:54,432] 145 root - INFO - Read train and test data completed
+[2023-06-11 16:13:54,432] 147 root - INFO - Check if there is any feature which consist 0 standard deviation or not
+[2023-06-11 16:13:54,456] 150 root - INFO - Check if there is any feature  consist duplicate value or not or not
+[2023-06-11 16:13:54,515] 153 root - INFO - Feature Transformation has been strated to transform the important featrue into one feature
+[2023-06-11 16:13:54,530] 120 root - INFO - Categorical columns: ['SEX', 'EDUCATION', 'MARRIAGE']
+[2023-06-11 16:13:54,530] 121 root - INFO - Numerical columns: ['LIMIT_BALAGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6']
+[2023-06-11 16:13:54,530] 132 root - INFO - Pipeline for numerical and categorical completed
+[2023-06-11 16:13:54,530] 157 root - INFO - Obtaining preprocessing object
+[2023-06-11 16:13:54,533] 162 root - INFO - Gettting the X train dataframe consist all the features
+[2023-06-11 16:13:54,533] 164 root - INFO - Gettting the y train dataframe consist the label
+[2023-06-11 16:13:54,535] 167 root - INFO - Gettting the X test dataframe consist all the features
+[2023-06-11 16:13:54,535] 169 root - INFO - Gettting the y test dataframe consist the label
+[2023-06-11 16:13:54,535] 171 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.

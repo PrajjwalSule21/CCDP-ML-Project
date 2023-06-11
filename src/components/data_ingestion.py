@@ -5,14 +5,7 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-# import hydra
-# from omegaconf import DictConfig, OmegaConf
 
-# @hydra.main(config_path="../../conf", config_name="main", version_base=None)
-# def path(conf:DictConfig):
-#     train_path = conf.train_data_path
-#     print(OmegaConf.to_yaml(conf))
-#     return conf.new
 
 
 
@@ -33,11 +26,6 @@ class DataIngestion:
         try:
             path = r'data\CustomerCreditCard.csv'
             df = pd.read_csv(path)
-            df['TOTAL_BILL_AMT'] = df['BILL_AMT1']+ df['BILL_AMT2'] + df['BILL_AMT3'] + df['BILL_AMT4'] + df['BILL_AMT5'] + df['BILL_AMT6']
-            df['TOTAL_PAY_AMT'] = df['PAY_AMT1'] + df['PAY_AMT2'] + df['PAY_AMT3'] + df['PAY_AMT4'] + df['PAY_AMT5'] + df['PAY_AMT6']
-            
-            df.drop(columns=['ID','BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'], inplace=True)
-
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
@@ -66,17 +54,7 @@ class DataIngestion:
             raise CustomException(e,sys)
         
 
-if __name__ == "__main__":
-    # a = path()
-    # print(a)
-    obj = DataIngestion()
-    train_data, test_data = obj.initiate_data_ingestion()
 
-#     data_transformation = DataTransformation()
-#     train_array, test_array, other = data_transformation.initiate_data_transformation(train_data, test_data)
-
-#     modeltrainer = ModelTrainer()
-#     print(modeltrainer.initiate_model_trainer(train_array=train_array, test_array=test_array))
 
 
 

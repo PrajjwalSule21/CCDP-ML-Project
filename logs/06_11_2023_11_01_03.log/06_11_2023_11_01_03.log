@@ -1,0 +1,8 @@
+[2023-06-11 11:01:22,264] 32 root - INFO - Entered into the data ingestion method
+[2023-06-11 11:01:22,529] 42 root - INFO - Read the dataset as dataframe
+[2023-06-11 11:01:22,530] 45 root - INFO - Make a directory for training data
+[2023-06-11 11:01:22,914] 48 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-11 11:01:22,914] 50 root - INFO - Train Test Split initiated
+[2023-06-11 11:01:23,793] 54 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-11 11:01:23,876] 57 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-11 11:01:23,877] 59 root - INFO - Ingestion of the data has been completed
