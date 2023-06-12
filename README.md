@@ -51,12 +51,12 @@ To install and run this application locally, follow these steps:
 - Prepare your input data file in CSV format and place it in the data directory.
 - Update the file path in the application code to point to your data file.
 
-## Run the application:
+### Run the application:
 
 ``` python app.py ```
 
 ## Usage
-After successfully installing and running the application, you can access it through your web browser. The application provides an interactive interface where you can input relevant credit card data and obtain predictions for credit card payment default.
+After successfully installing and running the application, you can access it through your web browser. The application provides an interactive interface where you can input relevant credit card data and obtain predictions for credit card payment defaults.
 
 Follow the instructions provided in the application to input the required information and generate predictions. The results will be displayed, indicating the likelihood of credit card payment default based on the provided data.
 
