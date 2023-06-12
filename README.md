@@ -17,16 +17,6 @@ Use Machine Learning to make this solution as well with the help of Data Analysi
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-## Approch
-
-- Get the data from resource.
-- Understand the data (in general).
-- Perform some EDA to understand the cusomters behaviour.
-- Preprocess the data.
-- Do Feature Engineering and Feature Selection. 
-- Make Different-Different model according the behaviour of data.
-- Get the best model and tune that model.
-- Deploy that model as Web-App
 
 
 ## Tech Stack
@@ -38,8 +28,37 @@ Use Machine Learning to make this solution as well with the help of Data Analysi
 - **HTML and CSS** - for making the frontend of application.
 
 
+## Features
+- **Accurate prediction**: The machine learning models used in this application have been trained on extensive historical credit data, ensuring reliable and precise predictions.
+- **User-friendly interface**: The application offers an intuitive and easy-to-use interface, making it accessible to users with varying technical backgrounds.
+- **Customizable parameters**: Users can adjust the prediction model parameters based on their specific requirements, enabling flexibility and customization.
+- **Real-time processing**: The application utilizes efficient algorithms, enabling fast processing and delivering predictions in real-time.
+- **Enhanced risk management**: Financial institutions can utilize the predictions to improve their risk management strategies and make informed decisions.
 
+## Installation
+To install and run this application locally, follow these steps:
 
+### Clone the repository:
+
+``` git clone https://github.com/your-username/credit-card-default-prediction.git ```
+
+### Install the required dependencies:
+
+``` pip install -r requirements.txt ```
+
+###  Set up the input data:
+
+- Prepare your input data file in CSV format and place it in the data directory.
+- Update the file path in the application code to point to your data file.
+
+## Run the application:
+
+``` python app.py ```
+
+## Usage
+After successfully installing and running the application, you can access it through your web browser. The application provides an interactive interface where you can input relevant credit card data and obtain predictions for credit card payment default.
+
+Follow the instructions provided in the application to input the required information and generate predictions. The results will be displayed, indicating the likelihood of credit card payment default based on the provided data.
 
 
 
