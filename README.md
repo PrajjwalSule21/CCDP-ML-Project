@@ -1,6 +1,6 @@
 # Credit Card Default Prediction
 
-The "credit-card-defaulter-prediction-ml-project" repository is a comprehensive machine learning project focused on predicting credit card defaulters. It provides a reliable and accurate solution to assess the risk of credit card holders defaulting on their payments, offering valuable insights for financial institutions and lenders. This repository incorporates a collection of advanced machine learning algorithms and techniques, making it a powerful tool for credit risk assessment. It encompasses a diverse range of components, including data preprocessing, feature engineering, model training, evaluation, and deployment.
+The Credit Card Default Prediction machine learning project focused on predicting credit card defaulters. It provides a reliable and accurate solution to assess the risk of credit card holders defaulting on their payments, offering valuable insights for financial institutions and lenders. This repository incorporates a collection of advanced machine-learning algorithms and techniques, making it a powerful tool for credit risk assessment. It encompasses a diverse range of components, including data preprocessing, feature engineering, model training, evaluation, and deployment.
 
 # Problem Statement
 
