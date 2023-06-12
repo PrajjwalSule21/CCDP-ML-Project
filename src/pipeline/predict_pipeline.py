@@ -40,7 +40,6 @@ class CustomData:
         PAY_4: int,
         PAY_5: int,
         PAY_6: int,
-        lunch: str,
         TOTAL_BILL_AMT: int,
         TOTAL_PAY_AMT: int):
 

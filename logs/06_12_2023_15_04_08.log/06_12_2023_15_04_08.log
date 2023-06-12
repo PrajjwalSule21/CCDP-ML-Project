@@ -1,0 +1,28 @@
+[2023-06-12 15:04:34,954] 14 root - INFO - Data Ingestion has started
+[2023-06-12 15:04:34,954] 25 root - INFO - Entered into the data ingestion method
+[2023-06-12 15:04:35,398] 29 root - INFO - Read the dataset as dataframe
+[2023-06-12 15:04:35,406] 32 root - INFO - Make a directory for training data
+[2023-06-12 15:04:36,512] 35 root - INFO - Save that dataframe into a csv file name as [data.csv] into the artifacts directory
+[2023-06-12 15:04:36,512] 37 root - INFO - Train Test Split initiated
+[2023-06-12 15:04:37,412] 41 root - INFO - Save the train data as a csv file into artifacts folder
+[2023-06-12 15:04:37,632] 44 root - INFO - Save the test data as csv file into artifacts folder
+[2023-06-12 15:04:37,632] 46 root - INFO - Ingestion of the data has been completed
+[2023-06-12 15:04:37,635] 16 root - INFO - Get the train and test data
+[2023-06-12 15:04:37,635] 19 root - INFO - Data transformation has started
+[2023-06-12 15:04:37,915] 148 root - INFO - Read train and test data completed
+[2023-06-12 15:04:37,915] 150 root - INFO - Check if there is any feature which consist 0 standard deviation or not
+[2023-06-12 15:04:37,968] 154 root - INFO - Check if there is any feature  consist duplicate value or not or not
+[2023-06-12 15:04:38,033] 158 root - INFO - Feature Transformation has been strated to transform the important featrue into one feature
+[2023-06-12 15:04:38,057] 124 root - INFO - Categorical columns: ['SEX', 'EDUCATION', 'MARRIAGE']
+[2023-06-12 15:04:38,057] 125 root - INFO - Numerical columns: ['LIMIT_BAL', 'AGE', 'PAY_1', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'TOTAL_BILL_AMT', 'TOTAL_PAY_AMT']
+[2023-06-12 15:04:38,057] 136 root - INFO - Pipeline for numerical and categorical completed
+[2023-06-12 15:04:38,057] 163 root - INFO - Obtaining preprocessing object
+[2023-06-12 15:04:38,057] 169 root - INFO - Gettting the X train dataframe consist all the features
+[2023-06-12 15:04:38,057] 172 root - INFO - Gettting the y train dataframe consist the label
+[2023-06-12 15:04:38,057] 176 root - INFO - Gettting the X test dataframe consist all the features
+[2023-06-12 15:04:38,057] 179 root - INFO - Gettting the y test dataframe consist the label
+[2023-06-12 15:04:38,057] 181 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2023-06-12 15:04:38,161] 193 root - INFO - Saved preprocessing object.
+[2023-06-12 15:04:38,193] 21 root - INFO - Get the train and test array for model building
+[2023-06-12 15:04:38,193] 24 root - INFO - Model Trainer has started
+[2023-06-12 15:04:38,193] 34 root - INFO - Split training and test input data

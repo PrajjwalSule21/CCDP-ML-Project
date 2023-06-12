@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Default Prediction</title>
+</head>
+<body>
+    <div class="login">
+        <!-- <a href="https://github.com/PrajjwalSule21/end-to-end-machine-learning-project" class="top-left-link" target="_blank">GitHub Repository Link</a> -->
+        <a href="https://github.com/PrajjwalSule21/CCDP-ML-Project" class='top-left-link' target="_blank">GitHub Repository Link</a>
+       <!-- <h1>Student Exam Performance Indicator</h1> -->
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Credit Card Defaulter Prediction</legend>
+        </h1>
+        <div class="mb-3">
+            <label class="form-label">Enter your Balance Limit</label>
+            <input class="form-control" type="number" name="LIMIT_BAL"
+                placeholder="Enter your Balance Limit" min='1000' max="10000000" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter your Age</label>
+            <input class="form-control" type="number" name="AGE"
+                placeholder="Enter your Age" min='21' max='100' />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <select class="form-control" name="SEX" placeholder="Enter you Gender" required>
+                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                <option value='1'>
+                    Male
+                </option>
+                <option value='2'>
+                    Female
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Level of Education</label>
+            <select class="form-control" name="EDUCATION" placeholder="Enter your level of Education" required>
+                <option class="placeholder" selected disabled value="">Select Level of Education</option>
+                <option value='1'>
+                    Graduate School
+                </option>
+                <option value='2'>
+                    University
+                </option>
+                <option value='3'>
+                    High School
+                </option>
+                <option value='4'>
+                    Other
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Marriage</label>
+            <select class="form-control" name="MARRIAGE"
+                placeholder="Enter Marriage Status" required>
+                <option class="placeholder" selected disabled value="">Select Marriage Status</option>
+                <option value='1'>
+                    Married
+                </option>
+                <option value='2'>
+                    Single
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 1</label>
+            <select class="form-control" name="PAY_1" placeholder="Pay1" required>
+                <option class="placeholder" selected disabled value="">Select Pay1</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 2</label>
+            <select class="form-control" name="PAY_2" placeholder="Pay2" required>
+                <option class="placeholder" selected disabled value="">Select Pay2</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 3</label>
+            <select class="form-control" name="PAY_3" placeholder="Pay3" required>
+                <option class="placeholder" selected disabled value="">Select Pay3</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 4</label>
+            <select class="form-control" name="PAY_4" placeholder="Pay4" required>
+                <option class="placeholder" selected disabled value="">Select Pay4</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 5</label>
+            <select class="form-control" name="PAY_5" placeholder="Pay5" required>
+                <option class="placeholder" selected disabled value="">Select Pay5</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Payment 6</label>
+            <select class="form-control" name="PAY_6" placeholder="Pay6" required>
+                <option class="placeholder" selected disabled value="">Select Pay6</option>
+                <option value='0'>
+                    No Due
+                </option>
+                <option value='1'>
+                    One Month Due
+                </option>
+                <option value='2'>
+                    Two Month Due
+                </option>
+                <option value='3'>
+                    Three Month Due
+                </option>
+                <option value='4'>
+                    Four Month Due
+                </option>
+                <option value='5'>
+                    Five Month Due
+                </option>
+                <option value='6'>
+                    Six Month Due
+                </option>
+                <option value='7'>
+                    Seven Month Due
+                </option>
+                <option value='8'>
+                    Eight Month Due
+                </option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Total Bill Amount</label>
+            <input class="form-control" type="number" name="TOTAL_BILL_AMT"
+                placeholder="Enter your Total Bill Amount Till 6 Month" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Total Payment Amount</label>
+            <input class="form-control" type="number" name="TOTAL_PAY_AMT"
+                placeholder="Enter your Total Pay Amount Till 6 Month" />
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="submit" required />
+        </div>
+    </form>
+    <h2>
+       {{results}}
+    </h2>
+    
+</body>
+</html>

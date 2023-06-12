@@ -23,8 +23,9 @@ def training_pipeline():
         modeltrainer = ModelTrainer()
         logging.info('Model Trainer has started')
         acc_score, confu_matrix = modeltrainer.initiate_model_trainer(train_array=train_array, test_array=test_array)
-        logging.info('Get the Accuray Score and confution Matrix of Best Model')
-        print(f'Accuracy of model{acc_score} and confusion matrix of model {confu_matrix}')
+        logging.info(f'Get the Accuray Score: {acc_score} and confution Matrix: {confu_matrix} of Best Model')
+        # print(f'Accuracy of model{acc_score} and confusion matrix of model {confu_matrix}')
+
         
 
     except Exception as e:
