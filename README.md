@@ -36,7 +36,6 @@ Use Machine Learning to make this solution as well with the help of Data Analysi
 - **Machine Learning** -  to make a different-different models on the data.
 - **Flask** - for making an API.
 - **HTML and CSS** - for making the frontend of application.
-- **Heeroku** - for deploying that solution so, that anyone can use the solution easily.
 
 
 
@@ -51,9 +50,6 @@ Use Machine Learning to make this solution as well with the help of Data Analysi
 
 ![new_ccdp-3](https://github.com/PrajjwalSule21/CCDP-ML-Project/assets/81765165/d9bcefdd-7e78-4d48-a1e6-90a2ca2b8ee8)
 
-## Demo
-
-https://ccdp-ml.herokuapp.com/
 
 
 ## Future Scope
