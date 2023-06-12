@@ -43,12 +43,13 @@ Use Machine Learning to make this solution as well with the help of Data Analysi
 
 
 
+
 ## Screenshots
 ![ccdp-1](https://github.com/PrajjwalSule21/CCDP-ML-Project/assets/81765165/bc8f195a-0abd-4820-81d3-5784f9bce745)
 
 ![ccdp-2](https://github.com/PrajjwalSule21/CCDP-ML-Project/assets/81765165/eeb07dd8-0fd5-4682-b649-ef85c113f246)
 
-![ccdp-3](https://github.com/PrajjwalSule21/CCDP-ML-Project/assets/81765165/efcb759f-0603-4003-b1d4-9a77cc5d1ffa)
+![new_ccdp-3](https://github.com/PrajjwalSule21/CCDP-ML-Project/assets/81765165/d9bcefdd-7e78-4d48-a1e6-90a2ca2b8ee8)
 
 ## Demo
 
