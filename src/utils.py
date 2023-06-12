@@ -28,12 +28,12 @@ def evaluate_models(X_train, y_train,X_test,y_test,models, parameter=None):
 
         for i in range(len(list(models))):
             model = list(models.values())[i]
-            # para=parameter[list(models.keys())[i]]
+            para=parameter[list(models.keys())[i]]
 
-            # gs = GridSearchCV(model,para,cv=3)
-            # gs.fit(X_train,y_train)
+            gs = GridSearchCV(model,para,cv=3)
+            gs.fit(X_train,y_train)
 
-            # model.set_params(**gs.best_params_)
+            model.set_params(**gs.best_params_)
             model.fit(X_train,y_train)
 
             #model.fit(X_train, y_train)  # Train model
