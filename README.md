@@ -40,7 +40,7 @@ To install and run this application locally, follow these steps:
 
 ### Clone the repository:
 
-``` git clone https://github.com/your-username/credit-card-default-prediction.git ```
+``` git clone https://github.com/PrajjwalSule21/CCDP-ML-Project ```
 
 ### Install the required dependencies:
 
