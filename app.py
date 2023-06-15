@@ -27,7 +27,7 @@ def predict_datapoint():
             PAY_5=int(request.form.get('PAY_5')),
             PAY_6=int(request.form.get('PAY_6')),
             TOTAL_BILL_AMT=int(request.form.get('TOTAL_BILL_AMT')),
-            TOTAL_PAY_AMT=int(request.form.get('TOTAL_PAY_AMT'))
+            TOTAL_PAY_AMT=float(request.form.get('TOTAL_PAY_AMT'))
 
         )
 
