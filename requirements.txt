@@ -9,6 +9,7 @@ dill
 Flask
 fonttools
 graphviz
+gunicorn==19.7.1
 hydra-core
 importlib-metadata
 importlib-resources
